@@ -34,9 +34,9 @@ img{
 
 .container{
      width: 100%;
-     max-width: 1250px;
-     padding-left: 25px;
-     padding-right: 25px;
+     max-width: 1100px;
+     padding-left: 50px;
+     padding-right: 50px;
      margin-left: auto;
      margin-right: auto;
 }
@@ -240,8 +240,39 @@ header{
 .section-main-bottom-img{
      width: 400px;
      height: 600px;
-     background-image: url(../img/watch-in-hand.svg);
-     background-size: contain;
+     background-image: url(../img/watch-in-hand.jpg);
+     background-size: cover;
      background-position: center center;
      background-repeat: no-repeat;
+     margin-top: -36px;
+}
+.main-section-bottom-lis{
+     width: 387px;
+}
+.section-main-button{
+     padding: 12px 90px;
+}
+.section.menu-bottom{
+     padding-bottom: 70px;
+}
+.footer-menu{
+     width: 100%;
+     height: 800px;
+     margin-top: 70px;
+     background-image: url(../img/runners\ 1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+
+}
+.footer-menu-bottom{
+     margin-left: 635px;
+     padding-top: 240px;
+     color: #fff;
+}
+.footer-menu-bottom-heading{
+     color: #ffffff;
+}
+.footer-menu-bottom-button{
+     background-color:#C9514C;
 }
