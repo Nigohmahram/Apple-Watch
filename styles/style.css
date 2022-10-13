@@ -29,6 +29,10 @@ img{
      max-width: 100%;
      height: auto;
 }
+*:focus{
+     outline: 2px dashed #C9B54C;
+     outline-offset: 2px;
+}
 
                                                        /* CONTAINER  */
 
@@ -42,7 +46,7 @@ img{
 }
                                                        /* ROOT  */
 :root{
-     --navbar-text-font: "Roboto";
+     --navbar-text-font: "Roboto" "Arial" sans-serif;
      --text-font-weight:400;
      --heading-font-weight: 700;
      --navbar-color: #333333;
@@ -116,6 +120,19 @@ header{
      font-size: 50px;
      line-height: 60px;
 }
+.search-form-input{
+     text-align: center;
+     align-items:center;
+     justify-content: center;
+     border: 0;
+     border-bottom: 1px solid #333;
+     padding: 0;
+     font-size: 15px;
+     line-height: 150%;
+     font-family: var(--navbar-text-font);
+     font-weight: var(--text-font-weight);
+}
+
 .header-menu-bottom-line {
      align-items:center;
      justify-content: center;
@@ -156,6 +173,14 @@ header{
      line-height: 27px;
      transition: 0.5s ease;
 }
+.hero{
+
+     padding-bottom: 185px;
+     border-bottom: 2px solid #ddd;
+     background-image: url(../img/intro-bg.jpg);
+     background-repeat:no-repeat;
+     background-position: right bottom;
+}
 
 .header-menu-bottom-button:hover{
      opacity: 0.8;
@@ -163,15 +188,7 @@ header{
 .header-menu-bottom-button:active{
      opacity: 0.6;
 }
-.header-menu-bottom-img{
-     margin-right: -155px;
-     width: 567px;
-     height: 545px;
-     background-image: url(../img/intro-bg.jpg);
-     background-size: contain;
-     background-position: center center;
-     background-repeat: no-repeat;
-}
+
 /* MAIN  */
 
 .main-section {
@@ -207,8 +224,18 @@ header{
      display: flex;
      align-items: center;
      text-align: center;
-     margin-top: -100px;
+     /* margin-top: -10px; */
 
+}
+.main-list-box-1{
+     margin-top: -40px;
+}
+.main-list-box-2{
+     margin-top: -60px;
+
+}
+.main-list-box-3{
+     margin-top: -80px;
 }
 
 
@@ -231,6 +258,9 @@ header{
      font-family: var(--navbar-text-font);
      font-weight: var(--heading-font-weight);
 }
+.span-box{
+     padding-top: 20px;
+}
 .main-list-box-span:hover{
      opacity: 0.8;
 }
@@ -239,7 +269,7 @@ header{
 }
 .section-main-bottom-img{
      width: 400px;
-     height: 600px;
+     height: 490px;
      background-image: url(../img/watch-in-hand.jpg);
      background-size: cover;
      background-position: center center;
@@ -275,4 +305,23 @@ header{
 }
 .footer-menu-bottom-button{
      background-color:#C9514C;
+}
+
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min-resolution: 192dpi),
+only screen and ( min-resolution: 2dppx) {
+     .section-main-bottom-img{
+          background-image:url(../img/watch-in-hand@2x.jpg);
+     }
+     .hero{
+          background-image:url(../img/intro-bg@2x.jpg);
+     }
+     .footer-menu{
+          background-image:url(../img/runners\ 1@2x.jpg);
+     }
+
 }
